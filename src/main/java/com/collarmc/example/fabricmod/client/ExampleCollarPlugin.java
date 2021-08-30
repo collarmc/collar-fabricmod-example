@@ -4,7 +4,6 @@ import com.collarmc.api.CollarPlugin;
 import com.collarmc.api.CollarPluginLoadedEvent;
 import com.collarmc.client.api.messaging.events.PrivateMessageReceivedEvent;
 import com.collarmc.client.events.CollarStateChangedEvent;
-import com.collarmc.example.fabricmod.CollarFabricmodExample;
 import com.collarmc.pounce.EventBus;
 import com.collarmc.pounce.Preference;
 import com.collarmc.pounce.Subscribe;
