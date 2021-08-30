@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "collar-fabricmod-example",
+  "version": "${version}",
+  "name": "Collar Fabricmod Example",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/collar-fabricmod-example/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.collarmc.example.fabricmod.client.CollarFabricmodExampleClient"
+    ],
+    "main": [
+      "com.collarmc.example.fabricmod.CollarFabricmodExample"
+    ],
+    "collar": [
+      "com.collarmc.example.fabricmod.client.ExampleCollarPlugin"
+    ]
+  },
+  "mixins": [
+    "collar-fabricmod-example.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
