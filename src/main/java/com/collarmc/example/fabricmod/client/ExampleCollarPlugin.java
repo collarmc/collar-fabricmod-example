@@ -16,11 +16,11 @@ import com.collarmc.pounce.Subscribe;
  */
 public class ExampleCollarPlugin implements CollarPlugin {
 
-    EventBus eventBus;
+    public static EventBus EVENT_BUS;
 
     @Override
     public void onLoad(CollarPluginLoadedEvent event) {
-        eventBus = event.eventBus;
+        EVENT_BUS = event.eventBus;
     }
 
     /**
