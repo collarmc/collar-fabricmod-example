@@ -4,6 +4,7 @@ import com.collarmc.api.CollarPlugin;
 import com.collarmc.api.CollarPluginLoadedEvent;
 import com.collarmc.client.api.messaging.events.PrivateMessageReceivedEvent;
 import com.collarmc.client.events.CollarStateChangedEvent;
+import com.collarmc.example.fabricmod.CollarFabricmodExample;
 import com.collarmc.pounce.EventBus;
 import com.collarmc.pounce.Preference;
 import com.collarmc.pounce.Subscribe;
@@ -21,6 +22,7 @@ public class ExampleCollarPlugin implements CollarPlugin {
     @Override
     public void onLoad(CollarPluginLoadedEvent event) {
         EVENT_BUS = event.eventBus;
+        // EVENT_BUS.subscribe(yourListener) here to receive Collar events
     }
 
     /**
