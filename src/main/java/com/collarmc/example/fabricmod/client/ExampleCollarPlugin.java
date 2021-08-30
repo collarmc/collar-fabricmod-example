@@ -2,8 +2,8 @@ package com.collarmc.example.fabricmod.client;
 
 import com.collarmc.api.CollarPlugin;
 import com.collarmc.api.CollarPluginLoadedEvent;
-import com.collarmc.client.Collar;
 import com.collarmc.client.api.messaging.events.PrivateMessageReceivedEvent;
+import com.collarmc.client.events.CollarStateChangedEvent;
 import com.collarmc.pounce.EventBus;
 import com.collarmc.pounce.Preference;
 import com.collarmc.pounce.Subscribe;
@@ -23,19 +23,20 @@ public class ExampleCollarPlugin implements CollarPlugin {
         eventBus = event.eventBus;
     }
 
-    @Override
-    public void onConnecting(Collar collar) {
-        // Connecting
-    }
-
-    @Override
-    public void onConnected(Collar collar) {
-        // Connected
-    }
-
-    @Override
-    public void onDisconnected(Collar collar) {
-        // Disconnected
+    /**
+     * Listen to collar state changes
+     * @param event state change event
+     */
+    @Subscribe
+    public void onConnecting(CollarStateChangedEvent event) {
+        switch (event.state) {
+            case CONNECTING:
+            case CONNECTED:
+            case DISCONNECTING:
+            case DISCONNECTED:
+            default:
+                System.out.println("Collar is " + event.state);
+        }
     }
 
     /**
