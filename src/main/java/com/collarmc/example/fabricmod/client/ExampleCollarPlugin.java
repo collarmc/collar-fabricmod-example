@@ -1,8 +1,8 @@
 package com.collarmc.example.fabricmod.client;
 
-import com.collarmc.api.CollarPlugin;
-import com.collarmc.api.CollarPluginLoadedEvent;
 import com.collarmc.client.api.messaging.events.PrivateMessageReceivedEvent;
+import com.collarmc.client.api.plugin.CollarPlugin;
+import com.collarmc.client.api.plugin.CollarPluginLoadedEvent;
 import com.collarmc.client.events.CollarStateChangedEvent;
 import com.collarmc.pounce.EventBus;
 import com.collarmc.pounce.Preference;
