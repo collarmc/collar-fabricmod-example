@@ -1,0 +1,6 @@
+{
+  "id": "collar-fabricmod-example",
+  "entrypoints": {
+    "ExampleCollarPlugin": "com.collarmc.example.fabricmod.client.ExampleCollarPlugin"
+  }
+}

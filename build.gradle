@@ -23,7 +23,6 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     // Required to compile against collar
     implementation group: 'com.collarmc', name: 'client', version: '0.1.0-SNAPSHOT', ext: 'jar', classifier: 'full'
-    implementation group: 'com.collarmc', name: 'plugin', version: '0.1.0-SNAPSHOT', ext: 'jar'
 }
 
 processResources {
